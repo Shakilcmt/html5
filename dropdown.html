@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        nav {
+            background-color: aqua;
+            padding: 10px;
+        }
+
+        nav>ul {
+            display: flex;
+        }
+
+
+
+        nav li {
+            margin-right: 10px;
+            /* margin-left: 20px; */
+            padding: 0 10px;
+            list-style: none;
+        }
+
+        nav li:hover {
+            background-color: lightblue;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav>ul>li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            left: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About
+                        <ul class="dropdown">
+                            <li><a href="">Item-1</a></li>
+                            <li><a href="">Item-2</a></li>
+                            <li><a href="">Item-3</a></li>
+                            <li><a href="">Item-4</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="">Log In</a></li>
+                <li><a href="">Log Out</a></li>
+            </ul>
+        </nav>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nulla expedita, minus ullam consequuntur
+            totam unde velit in quasi tempora cumque odio praesentium iusto asperiores repellendus a obcaecati,
+            perspiciatis nobis!</p>
+    </header>
+</body>
+
+</html>
